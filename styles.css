@@ -1,0 +1,279 @@
+/* SUMMARY
+1. GLOBAL
+2. HOMEPAGE
+    - MAIN
+3. PRICING
+4. COURSES
+5. FOOTER
+*/
+/* Underscored name properties are custom */
+
+/*** 1. GLOBAL ***/
+/* Color variables
+  ============================= */
+
+  :root {
+    --color-purple: #c271ff;
+    --color-dark-blue: #071629;
+
+    /* fonts */
+    --font-family: 'Source Sans Pro', sans-serif;
+    --HB-font-icon: holberton_school-icon;
+    --icon-color: #FFFFFF;
+}
+
+/* Base */
+body {
+    --font-family: 'Source Sans Pro', sans-serif;
+  }
+.btn-primary {
+    background-color: var(--color-purple) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    opacity: 0.9;
+    background-color: var(--color-purple);
+  }
+.btn-primary:active {
+      background-color: var(--color-purple);
+  }
+
+.purple {
+    color: var(--color-purple);
+}
+.background {
+    background-color: var(--color-dark-blue);
+}
+
+.form-bg {
+    background-color: var(--color-purple);
+}
+
+.font_size{
+    font-size: 32px;
+}
+/* 1. Hompage */
+/* Header - Logo */
+
+.logo-smile {
+    background: url("images/smile_off.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 35px;
+    height: 30px;
+    text-indent: -9999px;
+}
+.logo-text {
+    background: url("images/logo.png") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-indent: -9999px;
+}
+/* Hidden Menu
+  ============================== */
+.holberton_school-icon-menu {
+    margin-left: .5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+}
+/* Hero
+    ================= */
+.homepage-header {
+    background:url("images/pic_1.jpg") var(--color-dark-blue) center center no-repeat;
+    background-size: cover;
+    background-size: cover;
+    min-height: 1093px;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.nav-link a:active, .nav-link a:hover {
+    color: var(--color-purple);
+}
+
+/* Main */
+/*  testamonial Carousel
+    ================= */
+
+.testamonials {
+    background-color: var(--color-purple);
+    display: inline-flex;
+
+}
+img {
+    width: 148px;
+    height: 148px;
+}
+.icon-left::before {
+    font-family: var(--HB-font-icon) !important;
+    content: "\e903";
+    color: var(--color-dark-blue);
+    font-size: 5rem;
+}
+.icon-right::before {
+    font-family: var(--HB-font-icon) !important;
+    content: "\e902";
+    color: var(--color-dark-blue);
+    font-size: 5rem;
+}
+/* tutorials Carousel
+    =============== */
+.play-icon {
+    position: absolute;
+    top: 45px;
+    left: 95.5px;
+    opacity: 65%;
+}
+
+/* Footer */
+
+.fb::before {
+    font-family: var(--HB-font-icon);
+    content: "\e908";
+    color: var(--icon-color);
+    font-size: 2rem;
+}
+.twitter::before {
+    font-family: var(--HB-font-icon);
+    content: "\e90f";
+    color: var(--icon-color);
+    font-size: 2rem;
+}
+.insta::before {
+    font-family: var(--HB-font-icon);
+    content: "\e90a";
+    color: var(--icon-color);
+    font-size: 2rem;
+}
+/* Media Query's
+    =================*/
+
+@media screen and (max-width: 567px) {
+
+    .school {
+            font-size: 12vw;
+    }
+    .learn {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+    .school {
+        font-size: 10vw;
+    }
+    .car-helper {
+        margin:0 0 0 4rem;
+
+    }
+    .img-helper {
+        margin-bottom: 5rem;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .car-helper {
+        margin:0 0 0 7rem;
+        justify-content: center;
+    }
+    .img-helper {
+        margin-bottom: 3rem;
+        justify-content: center;
+    }
+}
+
+/* Media Queries for Popular Tutorials and Latest Videos
+  ============================== */
+
+  @media screen and (max-width: 567px) {
+    #pop-tutor-sm,
+    #latest-videos-sm {
+      display: block !important;
+    }
+    #pop-tutor-lg,
+    #latest-videos-lg {
+        display: none;
+    }
+    #pop-tutor-md,
+    #latest-videos-md {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 568px) and (max-width: 1109px) {
+    #pop-tutor-md,
+    #latest-videos-md {
+      display: block !important;
+    }
+    #pop-tutor-lg,
+    #latest-videos-lg {
+        display: none;
+    }
+    #pop-tutor-sm,
+    #latest-videos-sm {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1110px) {
+    #pop-tutor-lg,
+    #latest-videos-lg {
+      display: block !important;
+    }
+    #pop-tutor-md,
+    #latest-videos-md {
+        display: none;
+    }
+    #pop-tutor-sm,
+    #latest-videos-sm {
+        display: none;
+    }
+  }
+/* 3. PRICING PAGE */
+
+.pricing-header {
+    background:url("images/pic_2.jpg") var(--color-dark-blue) center center no-repeat;
+    background-size: cover;
+    background-size: cover;
+    min-height: 1093px;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.smile-helper {
+    max-width: 37px;
+    max-height: 30px;
+}
+.go-pro {
+    font-size: 60px;
+}
+.circle-checks:before {
+    font-size: 28px;
+    color: #82D24F;
+    font-family: var(--HB-font-icon) !important;
+    content: "\e905";
+}
+.logo {
+    width: 100px;
+    height: 35;
+}
+
+/* 4. COURSES PAGE */
+
+.course-header {
+    background:url("images/pic_3.jpg") var(--color-dark-blue) center center no-repeat;
+    background-size: cover;
+    background-size: cover;
+    min-height: 216px;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.course-header-font {
+    font-family: Coiny;
+    font-size: 32px;
+    line-height: 35px;
+
+}

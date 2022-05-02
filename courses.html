@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smile Pricing - Holberton</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+		<!--JQuery & Bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="style-HB-icons.css">
+</head>
+<body>
+    <header class="course-header container-fluid text-white">
+        <div class="container-lg">
+            <!--Header-->
+            <div class="d-flex justify-content-between pt-4 flex-sm-row flex-column">
+            <!--Logo-->
+                <div class="logo d-flex align-items-center justify-content-center-sm-start flex-sm-row flex-column">
+                    <a href="homepage.html" class="logo-smile mr-sm-3">Smile</a>
+                    <a href="homepage.html" class="logo-text mt-sm-0 mt-3">SmileSchool</a>
+                </div>
+                <span href="#navigationbar" class="holberton_school-icon-menu float-left position-absolute d-sm-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navigationbar"></span>
+                <!-- Navigation -->
+                <nav class="nav col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0" id="navigationbar">
+                    <ul class="d-flex justify-content-sm-between align-items-center p-0 m-0 w-100 flex-column flex-sm-row font-weight-bold">
+                        <li class="nav-link"><a class="text-white" href="courses.html">COURSES</a></li>
+                        <li class="nav-link"><a class="text-white" href="pricing.html">PRICING</a></li>
+                        <li class="nav-link"><a class="text-white" href="#">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="position-relative course-header-font pt-4 mx-5 ">
+                <h1 class="text-center font-weight-bold d-none d-sm-block"> <b> « Don’t cry because it’s over.</b>
+                    <span class="purple ">Smile</span><b> because it happened. »</b>
+                </h1>
+            </div>
+        </div>
+</header>
+</body>
+<main>
+    <!--form section-->
+    <section class="search-bar py-3 text-white form-bg">
+        <form class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mt-3">
+                    <label for="searchInput"><small><b>KEYWORDS</b></small></label>
+                    <div class="input-group border-bottom mb-0 mb-lg-3">
+                        <span class="input-group-append">
+                            <span class="search-icon d-flex align-items-center px-2"></span>
+                        </span>
+                        <input class="form-control border-0" type="search" placeholder="Search by keywords" id="searchInput">
+                    </div>
+                </div>
+                <div class="form-group col-12 col-sm-6 col-lg-4 mt-3">
+                    <label for="topicSelect"><small><b>TOPIC</b></small></label>
+                    <div class="border-bottom">
+                        <select class="form-control" id="topicSelect">
+                            <option>Novice</option>
+                            <option>Intermediate</option>
+                            <option>Expert</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-sm-6 col-lg-4 mt-3">
+                    <label for="searchResult"><small><b>SORT BY</b></small></label>
+                    <div class="border-bottom">
+                        <select class="form-control border-bottom" id="exampleFormControlSelect1">
+                            <option>Most Popular</option>
+                            <option>Most Recent</option>
+                            <option>Most Viewed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    </section>
+    <!--Card section-->
+    <section class="card py-5">
+        <!--row 1-->
+        <div class="d-flex row-cols-3 justify-content-around px-5 pb-4">
+        <!--card 1-->
+
+            <div class="card" style="max-width: 255px;">
+                <img src="images/thumbnail_1.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            <!--card 2-->
+            <div class="card" style="max-width: 255px;">
+                <img src="images/thumbnail_2.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            <!--card 3-->
+            <div class="card justify-content-between" style="max-width: 255px;">
+                <img src="images/thumbnail_3.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            <!--card 4-->
+            <div class="card" style="max-width: 255px;">
+                <img src="images/thumbnail_4.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row 2-->
+        <div class="d-flex row-cols-3 justify-content-around px-5">
+            <!--card 1-->
+                <div class="card" style="max-width: 255px;">
+                    <img src="images/thumbnail_1.jpg" alt="thumbnail" class="card-img-top">
+                    <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="d-flex">
+                            <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                            <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                        </div>
+                        <div class="stars d-flex justify-content-sm-between align-items-center">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                            <small class="run-time purple"><b>8 min</b></small>
+                        </div>
+                    </div>
+                </div>
+                <!--card 2-->
+                <div class="card" style="max-width: 255px;">
+                    <img src="images/thumbnail_2.jpg" alt="thumbnail" class="card-img-top">
+                    <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="d-flex">
+                            <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                            <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                        </div>
+                        <div class="stars d-flex justify-content-sm-between align-items-center">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                            <small class="run-time purple"><b>8 min</b></small>
+                        </div>
+                    </div>
+                </div>
+                <!--card 3-->
+                <div class="card justify-content-between" style="max-width: 255px;">
+                    <img src="images/thumbnail_3.jpg" alt="thumbnail" class="card-img-top">
+                    <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="d-flex">
+                            <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                            <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                        </div>
+                        <div class="stars d-flex justify-content-sm-between align-items-center">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                            <small class="run-time purple"><b>8 min</b></small>
+                        </div>
+                    </div>
+                </div>
+                <!--card 4-->
+                <div class="card" style="max-width: 255px;">
+                    <img src="images/thumbnail_4.jpg" alt="thumbnail" class="card-img-top">
+                    <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                        <div class="d-flex">
+                            <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                            <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                        </div>
+                        <div class="stars d-flex justify-content-sm-between align-items-center">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                            <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                            <small class="run-time purple"><b>8 min</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--row 3-->
+            <div class="d-flex row-cols-3 justify-content-around px-5">
+                 <!--card 2-->
+            <div class="card" style="max-width: 255px;">
+                <img src="images/thumbnail_2.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            <!--card 3-->
+            <div class="card justify-content-between" style="max-width: 255px;">
+                <img src="images/thumbnail_3.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            <!--card 4-->
+            <div class="card" style="max-width: 255px;">
+                <img src="images/thumbnail_4.jpg" alt="thumbnail" class="card-img-top">
+                <img src="images/play.png" alt="play-button" class="position-absolute play-icon" style="max-width: 64px; max-height: 64px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Diagonal Smile</b></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <div class="d-flex">
+                        <img src="images/profile_6.jpg" alt="profile_6" class="rounded-circle" style="max-width: 30px; max-height: 30px;">
+                        <p class="name ml-2 purple"><b>Tofer Sokolosky</b></p>
+                    </div>
+                    <div class="stars d-flex justify-content-sm-between align-items-center">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_on.png" alt="star-on" class="star_on" style="max-width: 15px; max-height: 15px;">
+                        <img src="images/star_off.png" alt="star-off" class="star_off" style="max-width: 15px; max-height: 15px;">
+                        <small class="run-time purple"><b>8 min</b></small>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="align-item-center background py-5">
+    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-between w-75 mx-auto my-sm-5">
+    <!--Logo-->
+        <div class="logo d-flex align-items-center flex-sm-row flex-column">
+            <a href="#" class="logo-smile mr-sm-2">Smile</a>
+            <a href="#" class="logo-text mt-sm-0 mt-3">SmileSchool</a>
+        </div>
+        <!-- Social-->
+
+        <div class="d-flex flex-row justify-content-around" style="width: 130px;">
+            <a class="social fb" href="https://www.facebook.com/HolbertonSchool" aria-label="Facebook" ></a>
+            <a class="social twitter" href="https://twitter.com/holbertonschool" aria-label="Twitter"></a>
+            <a class="social insta" href="https://www.instagram.com/holbertonschool" aria-label="Instagram"></a>
+        </div>
+    </div>
+    <div class="text-secondary text-center">©smileschool 2020</div>
+</footer>
+</html>
