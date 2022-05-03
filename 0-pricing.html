@@ -2,28 +2,43 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Smile Pricing - Holberton</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-	<link rel="icon" type="image/png" href="images/favicon.png">
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/favicon">
+	<title>Holberton SmilingSchool - JavaScript</title>
+	<meta name="description" content="Bootstrap is a free and open-source CSS framework">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-	<!--JQuery & Bootstrap-->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-	</script>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+		integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="style-HB-icons.css">
+    <link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
 </head>
 
 <body>
@@ -42,8 +57,8 @@
 				<nav class="nav col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0" id="navigationbar">
 					<ul
 						class="d-flex justify-content-sm-between align-items-center p-0 m-0 w-100 flex-column flex-sm-row font-weight-bold">
-						<li class="nav-link"><a class="text-white" href="courses.html">COURSES</a></li>
-						<li class="nav-link"><a class="text-white" href="pricing.html">PRICING</a></li>
+						<li class="nav-link"><a class="text-white" href="0-courses.html">COURSES</a></li>
+						<li class="nav-link"><a class="text-white" href="0-pricing.html">PRICING</a></li>
 						<li class="nav-link"><a class="text-white" href="#">LOGIN</a></li>
 					</ul>
 				</nav>
@@ -158,55 +173,21 @@
 		</section>
 	</header>
 	<main>
-		<section class="container-fluid testamonials col pb-5">
+		<!--testamonial carousel-->
+		<section class="container-fluid testamonials col pb-5" id="quote">
+
 			<div id="firstCarousel" class="carousel slide w-100" data-ride:="carousel" data-interval="false">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="d-flex flex-column flex-sm-row col-sm-10 align-items-center car-helper">
-							<img class="rounded-circle img-fluid px-3 mt-5 img-helper" src="images/profile_5.jpg"
-								alt="First slide">
-							<div>
-								<p class="px-4 mt-5">« Those tutorials are concise and go straight to the point. I can’t
-									think of a better place to learn smiling. And it’s so fun!</p>
-								<p class="px-4"><b>Person Name</b></p>
-								<cite class="px-4">weather presenter</cite>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="d-flex flex-column flex-sm-row col-sm-10 align-items-center car-helper">
-							<img class="rounded-circle img-fluid px-3 mt-5 img-helper" src="images/profile_6.jpg"
-								alt="Second slide">
-							<div>
-								<p class="px-4 mt-5">« I started Holberton in June of 2021 with no coding or Web-Dev
-									knowledge now i can make all this happen</p>
-								<p class="px-4"><b>Tofer Sokolosky</b></p>
-								<cite class="px-4">Web-Dev / Sofeware Engineer</cite>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="d-flex flex-column flex-sm-row col-sm-10 align-items-center car-helper">
-							<img class="rounded-circle img-fluid px-3 mt-5 img-helper" src="images/profile_HST.jpg"
-								alt="Third slide">
-							<div>
-								<p class="px-4 mt-5">« The Edge... there is no honest way to explain it because the only
-									people who really know where it is are the ones who have gone over. </p>
-								<p class="px-4"><b>Hunter S Thompson</b></p>
-								<cite class="px-4">Author - Journalist</cite>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a class="carousel-control-prev" role="button" href="#firstCarousel" data-slide="prev">
+                <div class="carousel-inner"></div>
+				<a class="carousel-control-prev pt-lg-5" role="button" href="#firstCarousel" data-slide="prev">
 					<span class="icon-left mb-5" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
 				</a>
-				<a class="carousel-control-next" role="button" href="#firstCarousel" data-slide="next">
+				<a class="carousel-control-next pt-lg-5" role="button" href="#firstCarousel" data-slide="next">
 					<span class="icon-right mb-5" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+		</section>
 		</section>
 		<section class="container-fluid my-5">
 			<h1 class="fqa text-center font-weight-light">F.A.Q.</h1>
