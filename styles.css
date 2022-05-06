@@ -144,7 +144,32 @@ img {
     left: 95.5px;
     opacity: 65%;
 }
+/* slick carousel */
+.slick-prev {
+    background-image: url('/images/arrow_black_left.png');
+    height: 62px;
+    width: 29px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.slick-next {
+    background-image: url('/images/arrow_black_right.png');
+    height: 62px;
+    width: 29px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slick-list {
+    overflow: none;/*important, allows overflow slides to be visible*/
+  }
+
+  #popular .card {
+    width: 255px;
+    height: auto;
+    font-family:var(--font-family);
+
+}
 /* Footer */
 
 .fb::before {
