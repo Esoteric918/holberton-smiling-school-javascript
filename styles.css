@@ -272,3 +272,51 @@ img {
     line-height: 35px;
 
 }
+
+/* Media Queries for Popular Tutorials and Latest Videos
+  ============================== */
+
+  /* @media screen and (max-width: 567px) {
+    #pop-tutor-sm,
+    #latest-videos-sm {
+      display: block !important;
+    }
+    #pop-tutor-lg,
+    #latest-videos-lg {
+        display: none;
+    }
+    #pop-tutor-md,
+    #latest-videos-md {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 568px) and (max-width: 1109px) {
+    #pop-tutor-md,
+    #latest-videos-md {
+      display: block !important;
+    }
+    #pop-tutor-lg,
+    #latest-videos-lg {
+        display: none;
+    }
+    #pop-tutor-sm,
+    #latest-videos-sm {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1110px) {
+    #pop-tutor-lg,
+    #latest-videos-lg {
+      display: block !important;
+    }
+    #pop-tutor-md,
+    #latest-videos-md {
+        display: none;
+    }
+    #pop-tutor-sm,
+    #latest-videos-sm {
+        display: none;
+    }
+  } */
