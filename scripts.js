@@ -1,6 +1,7 @@
 window.onload = () => {
   quoteCarousel();
-  loadcards('popular');
+  loadPopCards('cardMaker');
+  loadLatestCards('cardMaker');
 }
 
 
@@ -87,11 +88,12 @@ function quoteCarousel() {
 }
 
 function cardmaker(data) {
-  let id = document.getElementById('popular');
-  console.log(id, 'is it a thing');
+  // let id = document.getElementById('cardMaker');
+  let id = $("#cardMaker")
+  console.log(id,'test of content');
   itemOnCard = `<div>
-  <div class="card mx-2" id="${data.id}" >
-  <img src="${data['thumb_url']}" alt="thumbnail" class="card-img-top">
+      <div class="card mx-2" id="${data.id}" >
+      <img src="${data['thumb_url']}" alt="thumbnail" class="card-img-top">
                   <img src="images/play.png" alt="play-button" class="position-absolute play-icon"
                     style="max-width: 64px; max-height: 64px;">
       <div class="card-body">
@@ -115,9 +117,10 @@ function cardmaker(data) {
     </div>
   </div>`
   $(id).append(itemOnCard);
+
 }
 
-function loadcards(id) {
+function loadPopCards(id) {
   // Query for data for popular or latest tutorials video section (multi-item carousel)
   $.ajax({
     type: 'GET',
@@ -134,7 +137,29 @@ function loadcards(id) {
     },
     complete: function () {
       $('.loader').hide();
-      $('#popular').slick(responsive);
+      $('#cardMaker').slick(responsive);
+    }
+  })
+}
+
+function loadLatestCards(id) {
+  // Query for data for popular or latest tutorials video section (multi-item carousel)
+  $.ajax({
+    type: 'GET',
+    url: 'https://smileschool-api.hbtn.info/latest-videos',
+    // Before - show carousel
+    beforeSend: function () {
+      $('.loader').show();
+    },
+    success: (data) => {
+      // for each tutorial, add html data
+      for (let i = 0; i < data.length; i++) {
+        cardmaker(data[i]);
+      }
+    },
+    complete: function () {
+      $('.loader').hide();
+      $('#cardMaker').slick(responsive);
     }
   })
 }

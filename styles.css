@@ -165,7 +165,7 @@ img {
     overflow: none;/*important, allows overflow slides to be visible*/
   }
 
-  #popular .card {
+  #cardMaker .card {
     width: 255px;
     height: auto;
     font-family:var(--font-family);
