@@ -1,7 +1,7 @@
 window.onload = () => {
   quoteCarousel();
-  loadPopCards('cardMaker');
-  loadLatestCards('cardMaker');
+  loadPopCards();
+  loadLatestCards();
 }
 
 
@@ -87,10 +87,10 @@ function quoteCarousel() {
 												});
 }
 
-function cardmaker(data) {
+function cardmaker(data, target) {
   // let id = document.getElementById('cardMaker');
-  let id = $("#cardMaker")
-  console.log(id,'test of content');
+  // let id = $("#cardMaker")
+  console.log(target, 'test of content');
   itemOnCard = `<div>
       <div class="card mx-2" id="${data.id}" >
       <img src="${data['thumb_url']}" alt="thumbnail" class="card-img-top">
@@ -116,7 +116,7 @@ function cardmaker(data) {
         </div>
     </div>
   </div>`
-  $(id).append(itemOnCard);
+  $(target).append(itemOnCard);
 
 }
 
@@ -132,12 +132,12 @@ function loadPopCards(id) {
     success: (data) => {
       // for each tutorial, add html data
       for (let i = 0; i < data.length; i++) {
-        cardmaker(data[i]);
+        cardmaker(data[i], $('#test'));
       }
     },
     complete: function () {
       $('.loader').hide();
-      $('#cardMaker').slick(responsive);
+      $('#test').slick(responsive);
     }
   })
 }
@@ -154,12 +154,12 @@ function loadLatestCards(id) {
     success: (data) => {
       // for each tutorial, add html data
       for (let i = 0; i < data.length; i++) {
-        cardmaker(data[i]);
+        cardmaker(data[i], $('#test_2'));
       }
     },
     complete: function () {
       $('.loader').hide();
-      $('#cardMaker').slick(responsive);
+      $('#test_2').slick(responsive);
     }
   })
 }
