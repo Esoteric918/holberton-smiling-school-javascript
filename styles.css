@@ -146,7 +146,7 @@ img {
 }
 /* slick carousel */
 .slick-prev {
-    background-image: url('/images/arrow_black_left.png');
+    background-image: url('/images/arrow_black_left.png') !important;
     height: 62px;
     width: 29px;
     background-size: cover;
@@ -154,7 +154,7 @@ img {
 }
 
 .slick-next {
-    background-image: url('/images/arrow_black_right.png');
+    background-image: url('/images/arrow_black_right.png') !important;
     height: 62px;
     width: 29px;
     background-size: cover;
